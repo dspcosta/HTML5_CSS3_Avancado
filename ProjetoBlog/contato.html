@@ -1,0 +1,116 @@
+
+<!DOCTYPE html> 
+
+
+<html lang="pt-BR">
+
+
+    <head>
+
+        <title>Contato - João da Silva</title>
+
+        <meta charset="utf-8">
+
+      
+        <!-- <link rel="stylesheet" href="../Praticando/resetnormalize.css"> -->
+
+        <link rel="stylesheet" href="../ProjetoBlog/css/reset.css">
+
+        <link rel="icon" href="../ProjetoBlog/img/favicon.png">
+        <link rel="stylesheet" href="../ProjetoBlog/css/site.css">
+        <link rel="stylesheet" href="../ProjetoBlog/css/contato.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+
+    </head>
+
+    <body> 
+        <main>
+            <div class="titulo-principal">
+            <h1>Contato</h1>
+            </div>
+
+            <div class="texto-central">
+
+            <form action="">
+
+                <fieldset class="dados-pessoais">
+                    <legend>Seus dados pessoais:</legend>
+                    <div class="box-nome">
+                        <label  for="Nome">Nome:</label>
+                        <input  id="Nome" name="nome-contato" placeholder="Seu nome aqui" type="text" pattern="[A-Za-z `åáçã˜ˆâê]{4,}" 
+                        title="O nome precisa ter pelo menos 4 caracteres e não conter números" required autofocus>
+                    </div>
+
+                    <div class="box-email">
+                    <label for="E-mail">E-mail:</label>
+                    <input id="E-mail" name="email-contato" placeholder="E-mail para contato" type="email" required>
+                    </div>
+                </fieldset>
+                    
+                <fieldset class="assunto">
+                    <legend>Assunto:</legend>
+                    <label class="assunto1"> 
+                        <input type="radio" name="assunto" value="servico">
+                        Serviços
+                    </label>
+
+                      
+                    <label class="assunto2"> 
+                        <input type="radio" name="assunto" value="blog">
+                        Blog
+                    </label>
+
+                   <fieldset class="assunto3">   
+                    
+                        <input type="radio"  name="assunto" value="Outro" id="outro">
+                        <label for="outro">Outro</label>
+                        <input type="text" name="outro-assunto" placeholder="Especifique aqui">
+                    
+                    </fieldset>
+                </fieldset>
+
+                    <label for="msg">Mensagem:</label>
+                    <textarea name="mensagem" id="msg" cols="60" rows="10" placeholder="Sua mensagem aqui :)" pattern="[A-Za-z `åáçã˜ˆâê]{4,}" required></textarea>
+
+                    <button type="submit">Enviar <strong>mensagem</strong></button>
+            </form>
+            </div>
+        </main>
+
+        <img class= "fotoJoao" src="../ProjetoBlog/img/eu.jpg" alt="Foto de João da Silva">
+
+        <aside class="navegacao-site">
+            <nav>
+                
+                    <h1>João da Silva</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li> 
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="bio.html">Sobre mim</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Contato</a></li>
+
+                    </ul>
+            
+            </nav>
+
+                    <ul class="icone-sociais">
+                        <li><a class="github" data-tooltips="Veja meus projetos opensource!" href="https://github.com/git-joaodasilva" target="blank">GitHub</a></li>
+                        <li><a class= "twitter" data-tooltips="Siga-me no Twitter" href="https://twitter.com/twitter-joaodasilva" target="blank">Twitter</a></li>
+                        <li><a class ="linkedin" data-tooltips ="Veja meu currículo!" href="https://br.linkedin.com/pub/linkedin-joao-da-silva/32/4/508" target="blank">LinkedIn</a></li>
+                    </ul>
+
+        </aside>
+
+        <footer class="rodape">
+                João da Silva  &copf; Todos os Direitos Reservados.
+        </footer>
+    
+       
+        
+    </body>
+
+    
+
+</html>

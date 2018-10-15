@@ -1,0 +1,167 @@
+.texto-central > p::first-letter{
+    font-size: 2rem;
+    text-shadow: -0.1rem 0.1rem grey;
+    margin-right: 0.2ch;
+}
+
+.bio-citacao {
+    
+    position: relative;
+    background-color: #D9E5E3;
+    padding: .5em .5em;
+    box-shadow: 0 0 2em black;
+    border: .5em transparent solid;
+    border-bottom-color: #333;
+    border-right-color: #FFF;
+    border-left-color:   rgba(217, 229, 227, 0.842);
+    border-top-color:  rgba(217, 229, 227, 0.932);
+    width: 40ch;
+    margin: 2rem 1rem 1rem;
+    box-sizing: border-box;
+    transition: transform 0.5s, box-shadow 1s ease-in-out;
+    transition-delay: transform 0.5s, box-shadow 1s;
+    -webkit-animation: balancando 2s infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in;
+    animation: balancando 2s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+
+}
+
+@-webkit-keyframes balancando{
+    from {
+        top:0;
+    }
+
+    90%{
+        transform: rotate(-2deg);
+    }
+
+    to {
+        top: 1em;
+    }
+}
+
+@keyframes balancando{
+    from {
+        top:0;
+    }
+
+    90% {
+        transform: rotate(-4deg);
+    }
+
+    to {
+        top: 1em;
+    }
+}
+
+
+.bio-citacao > p{
+    position: relative;
+}
+
+.bio-citacao::before{
+    content: '“';
+    font-size: 12rem;
+    position: absolute;
+    top: -4rem;
+    left: 1rem;
+    color: grey;
+    opacity: 0.3;
+}
+
+
+.bio-citacao:nth-child(odd){
+
+    float: right;
+    margin-left: 3ch;
+}
+
+.bio-citacao:nth-child(even){
+    float: left;
+    margin-right: 3ch;
+}
+
+cite {
+    font-style: italic;
+    float:right;
+    
+    
+}
+
+.bio-citacao:nth-of-type(odd):hover, .bio-citacao:nth-of-type(odd):focus{
+    transition-delay: 0.3s;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.8);
+    width: 40ch;
+    transform: rotate(6deg) scale(1.2);
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    
+   
+}
+
+.bio-citacao:nth-of-type(even):hover, .bio-citacao:nth-of-type(even):focus{
+    transition-delay: 0.3s;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.8);
+    width: 40ch;
+    transform: rotate(-6deg) scale(1.2);
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+   
+}
+.titulo-secundario {
+
+    font-size: 2.3rem;
+    border-bottom: #333 .2rem;
+    border-bottom-style: double;
+    font-weight: bolder;
+    font-family: "Open Sans Condensed", sans-serif;
+    clear: both;
+
+}   
+
+table {
+    margin-top: 2ch;
+    border-collapse: separate;
+    border-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    font-family: "Crimson Text 400", sans-serif;
+   
+    
+   
+}
+
+th {
+    background-color: rgb(77, 2, 77);
+    border: black 1px solid;
+    width: 2em;
+    height: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    color: white;
+   
+    
+
+}
+
+tbody th{
+    background-color: #77173d;
+}
+
+td {
+    background-color: aliceblue;
+    border: black 1px solid;
+    font-size: 0.9em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+td[colspan]{
+    vertical-align: middle;
+    font-weight: bold;
+    font-style: italic;
+}
